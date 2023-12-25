@@ -4,8 +4,25 @@ iptables v1.8.10 (nf_tables):  RULE_APPEND failed (No such file or directory): r
 
 Using legacy version of iptables by running
 
-apk add iptables-legacy
-rm /sbin/iptables
-ln -s /sbin/iptables-legacy /sbin/iptables
+oneplus-dumpling:~$ apk add iptables-legacy
+oneplus-dumpling:~$ rm /sbin/iptables
+oneplus-dumpling:~$ ln -s /sbin/iptables-legacy /sbin/iptables
 
 Fixed the issue
+
+
+revise font size to fekeyboard console:
+
+oneplus-dumpling:~$ sudo apk add font-terminus font-inconsolata font-dejavu font-noto font-noto-cjk font-awesome font-noto-extra
+oneplus-dumpling:~$ ls -l /dev/tty*
+-------
+crw-rw----    1 root     dialout   244,   1 Jan  1  1970 /dev/ttyMSM1
+-------
+
+oneplus-dumpling:~$ usermod -a -G dialout user
+oneplus-dumpling:~$ sudo usermod -a -G dialout user
+
+
+oneplus-dumpling:~$ cat .profile 
+PATH="$PATH:$HOME/.local/bin"
+/usr/sbin/setfont ter-v32n.psf.gz
