@@ -14,6 +14,7 @@ Fixed the issue
 revise font size to fekeyboard console:
 
 oneplus-dumpling:~$ sudo apk add font-terminus font-inconsolata font-dejavu font-noto font-noto-cjk font-awesome font-noto-extra
+oneplus-dumpling:~$ sudo apk add consolefont-spleen
 oneplus-dumpling:~$ ls  /usr/share/fonts/misc/
 fonts.dir        ter-u14n.otb     ter-u20b.otb     ter-u24n.otb     ter-x12b.pcf.gz  ter-x16n.pcf.gz  ter-x22b.pcf.gz  ter-x28n.pcf.gz
 fonts.scale      ter-u16b.otb     ter-u20n.otb     ter-u28b.otb     ter-x12n.pcf.gz  ter-x18b.pcf.gz  ter-x22n.pcf.gz  ter-x32b.pcf.gz
