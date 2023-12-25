@@ -11,7 +11,7 @@ oneplus-dumpling:~$ ln -s /sbin/iptables-legacy /sbin/iptables
 Fixed the issue
 
 
-revise font size to fekeyboard console:
+revise font size to fbkeyboard console:
 
 oneplus-dumpling:~$ sudo apk add font-terminus font-inconsolata font-dejavu font-noto font-noto-cjk font-awesome font-noto-extra
 oneplus-dumpling:~$ sudo apk add consolefont-spleen
